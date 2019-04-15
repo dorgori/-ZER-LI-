@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reports.SatisfactionReportGui">
+   <children>
+      <Text layoutX="118.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satisfaction Report">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" />
+      <Text layoutX="24.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarter:" />
+      <Text layoutX="24.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID:" />
+      <Text id="txtYear" fx:id="txtYear" layoutX="84.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text id="txtQuater" fx:id="txtQuater" layoutX="84.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text id="txtStore" fx:id="txtStore" layoutX="84.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="24.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 1:" />
+      <Text layoutX="24.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 2:" />
+      <Text layoutX="24.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 3:" />
+      <Text id="txtQ1" fx:id="txtQ1" layoutX="84.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text id="txtQ2" fx:id="txtQ2" layoutX="84.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text id="txtQ3" fx:id="txtQ3" layoutX="84.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="24.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 4:" />
+      <Text id="txtQ4" fx:id="txtQ4" layoutX="84.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="24.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 5:" />
+      <Text id="txtQ5" fx:id="txtQ5" layoutX="84.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="24.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quest 6:" />
+      <Text id="txtQ6" fx:id="txtQ6" layoutX="84.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <BarChart id="satisfactionChart" fx:id="satisfactionChart" layoutX="118.0" layoutY="80.0" prefHeight="235.0" prefWidth="296.0">
+        <xAxis>
+          <CategoryAxis fx:id="questions_chart_x" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="satisfy_chart_y" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button id="btnReturn" fx:id="btnReturn" layoutX="375.0" layoutY="14.0" mnemonicParsing="false" onAction="#backPress" prefHeight="25.0" prefWidth="65.0" text="Return" />
+      <Button id="btnCompare" fx:id="btnCompare" layoutX="375.0" layoutY="40.0" mnemonicParsing="false" onAction="#comparePressed" text="Compare" visible="false" />
+      <Text layoutX="138.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store rate:" />
+      <Text id="txtAvg" fx:id="txtAvg" layoutX="203.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+   </children>
+</AnchorPane>

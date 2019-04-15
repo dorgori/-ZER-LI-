@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reports.IncomeReportMulty">
+   <children>
+      <Button id="backBtn_btn" fx:id="backBtn_btn" layoutX="378.0" layoutY="508.0" mnemonicParsing="false" onAction="#backPress" text="Back" />
+      <BarChart id="income_chart" fx:id="income_chart" layoutX="52.0" layoutY="59.0" prefHeight="414.0" prefWidth="652.0" title="income">
+         <xAxis>
+            <CategoryAxis fx:id="stores_chart_x" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="income_chart_y" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Button id="cmp_btn" fx:id="cmp_btn" layoutX="728.0" layoutY="182.0" mnemonicParsing="false" onAction="#cmp_listener" text="Compare" />
+      <Text id="incomeReportTitle_txt" fx:id="incomeReportTitle_txt" layoutX="83.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income Report Compare">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.CustomerMenuGui">
+   <children>
+      <Text id="lblTitle" fontSmoothingType="LCD" layoutX="188.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Menu">
+         <font>
+            <Font name="AR DELANEY" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#41339a" />
+                  <Stop color="#41339a" offset="0.007662835249042145" />
+                  <Stop color="#3c33bc" offset="0.9808429118773946" />
+                  <Stop color="#3c33bc" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button id="btnBrowseCatalog" fx:id="btnBrowseCatalog" layoutX="200.0" layoutY="112.0" mnemonicParsing="false" onAction="#browseCatalogListenner" prefHeight="122.0" prefWidth="151.0" text="Browse Catalog">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btnCreateOrder" fx:id="btnCreateOrder" layoutX="49.0" layoutY="112.0" mnemonicParsing="false" onAction="#createOrderListenner" prefHeight="122.0" prefWidth="151.0" text="Create Order">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btnViewOrders" fx:id="btnViewOrders" layoutX="351.0" layoutY="112.0" mnemonicParsing="false" onAction="#viewOrdersListenner" prefHeight="122.0" prefWidth="151.0" text="View Orders" />
+      <Button id="logout_btn" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#logout_btn" text="LogOut" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+      <Text id="creditsValue_txt" fx:id="creditsValue_txt" layoutX="125.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.46875" />
+      <Label id="credits_lbl" fx:id="credits_lbl" layoutX="28.0" layoutY="79.0" text="Credits in store:" />
+   </children>
+</AnchorPane>

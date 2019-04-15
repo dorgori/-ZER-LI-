@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.ViewExistingOrder">
+   <children>
+      <Text fill="#81cd55" layoutX="164.0" layoutY="52.0" stroke="#141313" strokeType="OUTSIDE" text="Order details">
+         <font>
+            <Font name="Consolas Bold" size="42.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Text>
+      <TableView id="tblOrderedProd" fx:id="tblOrderedProd" layoutX="112.0" layoutY="68.0" onMouseClicked="#checkIfSelfMadeSelected" prefHeight="200.0" prefWidth="376.0">
+        <columns>
+          <TableColumn id="clmType" fx:id="clmType" prefWidth="75.0" text="Type" />
+          <TableColumn id="clmID" fx:id="clmID" prefWidth="75.0" text="ID" />
+            <TableColumn id="clmItemName" fx:id="clmItemName" prefWidth="75.0" text="Item name" />
+            <TableColumn id="clmQuantity" fx:id="clmQuantity" prefWidth="75.0" text="Quantity" />
+            <TableColumn id="clmPrice" fx:id="clmPrice" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button id="btnViewOrders" fx:id="btnViewOrders" layoutX="516.0" layoutY="105.0" mnemonicParsing="false" onAction="#viewOrdersListenner" prefHeight="25.0" prefWidth="155.0" text="Return View Orders" />
+      <Button id="btnCancelOrder" fx:id="btnCancelOrder" layoutX="516.0" layoutY="68.0" mnemonicParsing="false" onAction="#cancelOrderPress" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: red;" text="Cancel Order">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button id="btnCustomerMenu" fx:id="btnCustomerMenu" layoutX="516.0" layoutY="142.0" mnemonicParsing="false" onAction="#customerMenuListenner" text="Return to Customer Menu" />
+      <Text layoutX="506.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" />
+      <Text id="lblPrice" fx:id="lblPrice" layoutX="545.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0" />
+      <ListView id="lstFlowers" fx:id="lstFlowers" layoutX="112.0" layoutY="288.0" prefHeight="149.0" prefWidth="376.0" visible="false" />
+      <Text id="refundMsg_txt" fx:id="refundMsg_txt" fill="RED" layoutX="493.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your refund from this cancel:" visible="false" AnchorPane.bottomAnchor="155.818359375" AnchorPane.leftAnchor="493.0" AnchorPane.rightAnchor="28.4375" AnchorPane.topAnchor="308.181640625">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font></Text>
+      <Text id="valueRefundMsg_txt" fx:id="valueRefundMsg_txt" layoutX="656.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="value" visible="false" wrappingWidth="28.21873556356877" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="survey.SurveyGui">
+   <children>
+      <Label layoutX="22.0" layoutY="90.0" text="1. How is the deleviry time" />
+      <Label layoutX="22.0" layoutY="123.0" text="2. How is the quality of the flowers" />
+      <Label layoutX="22.0" layoutY="157.0" prefHeight="17.0" prefWidth="397.0" text="3. How satisfied are you with the communication with the store's employees" />
+      <Label layoutX="22.0" layoutY="190.0" text="4. How convenient it was for you to use the app" />
+      <Label layoutX="22.0" layoutY="222.0" text="5. How much detailed is the catalog" />
+      <Label layoutX="23.0" layoutY="255.0" text="6. Will you recommend us" />
+      <Button id="submit" fx:id="submit" layoutX="193.0" layoutY="345.0" mnemonicParsing="false" onAction="#submit" text="Submit" textFill="#7f11c4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#b207c8" layoutX="219.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Survey" wrappingWidth="177.33333706855774">
+         <font>
+            <Font name="Dubai Bold" size="48.0" />
+         </font>
+      </Text>
+      <ComboBox id="answer1" fx:id="answer1" layoutX="438.0" layoutY="86.0" onAction="#choose_ans1" prefWidth="150.0" promptText="Answer 1" />
+      <ComboBox id="answer2" fx:id="answer2" layoutX="438.0" layoutY="119.0" onAction="#choose_ans2" prefWidth="150.0" promptText="Answer 2" />
+      <ComboBox id="answer3" fx:id="answer3" layoutX="438.0" layoutY="153.0" onAction="#choose_ans3" prefWidth="150.0" promptText="Answer 3" />
+      <ComboBox id="answer4" fx:id="answer4" layoutX="438.0" layoutY="186.0" onAction="#choose_ans4" prefWidth="150.0" promptText="Answer 4" />
+      <ComboBox id="answer5" fx:id="answer5" layoutX="438.0" layoutY="218.0" onAction="#choose_ans5" prefWidth="150.0" promptText="Answer 5" />
+      <ComboBox id="answer6" fx:id="answer6" layoutX="438.0" layoutY="251.0" onAction="#choose_ans6" prefWidth="150.0" promptText="Answer 6" />
+      <Text id="error_not_6_ans" fx:id="error_not_6_ans" fill="#f90c0c" layoutX="390.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You must answer all the questions" visible="false" />
+      <Button id="close" fx:id="close" layoutX="305.0" layoutY="345.0" mnemonicParsing="false" onAction="#close" text="close" textFill="#7f11c4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="choose_store" layoutX="141.0" layoutY="308.0" onAction="#chose_store" prefWidth="150.0" promptText="chose_store" />
+      <Label layoutX="23.0" layoutY="312.0" text="Survey on store" />
+      <Text fx:id="chose_store_error_txt" fill="#f30a0a" layoutX="308.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose your store" visible="false" />
+   </children>
+</AnchorPane>

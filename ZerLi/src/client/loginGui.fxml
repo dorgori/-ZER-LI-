@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.LoginGui">
+   <children>
+      <Text id="lbl_username" fx:id="lbl_username" layoutX="73.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+      <Text id="lbll_pass" fx:id="lbll_pass" layoutX="73.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <Text id="lbl_wrong_login" fx:id="lbl_wrong_login" fill="RED" layoutX="123.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="incorrect user name or password" visible="false" />
+      <TextField id="txt_user_name" fx:id="txt_user_name" layoutX="147.0" layoutY="180.0" />
+      <TextField id="txt_pass" fx:id="txt_pass" layoutX="147.0" layoutY="226.0" />
+      <Button fx:id="btn_login" defaultButton="true" layoutX="177.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnListener" text="Login" />
+      <Text fontSmoothingType="LCD" layoutX="143.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="Jokerman" size="45.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2961c9" />
+                  <Stop color="#bc6161" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text id="active_txt" fx:id="active_txt" fill="RED" layoutX="150.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user already logged in" visible="false" />
+      <Text id="blockedtxt_txt" fx:id="blockedtxt_txt" fill="RED" layoutX="149.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User is BLOCKED by admin" visible="false" />
+      <Text fontSmoothingType="LCD" layoutX="-3.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to ZerLi">
+         <font>
+            <Font name="Jokerman" size="45.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#d72525" />
+                  <Stop color="#4a4d2a" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

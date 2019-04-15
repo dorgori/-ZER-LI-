@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="order.PaymentOrderGui">
+   <children>
+      <Text layoutX="34.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Greeting Card:" />
+      <TextArea id="txtGreeting" fx:id="txtGreeting" layoutX="122.0" layoutY="263.0" prefHeight="96.0" prefWidth="229.0" />
+      <Text layoutX="169.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipment:" />
+      <ComboBox id="cmbShipment" fx:id="cmbShipment" layoutX="235.0" layoutY="24.0" onAction="#chooseDelivery" prefWidth="150.0" promptText="Choose shipment" />
+      <DatePicker id="dtDate" fx:id="dtDate" layoutX="104.0" layoutY="149.0" onAction="#chooseDeliveryDate" prefHeight="25.0" prefWidth="149.0" />
+      <Text id="lblDate" fx:id="lblDate" layoutX="33.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+      <Text id="lblTime" fx:id="lblTime" layoutX="33.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" />
+      <Text id="lblAddress" fx:id="lblAddress" layoutX="33.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" visible="false" />
+      <TextField id="txtRecipient" fx:id="txtRecipient" layoutX="105.0" layoutY="70.0" visible="false" />
+      <Text id="lblRecipient" fx:id="lblRecipient" layoutX="33.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipient" visible="false" />
+      <TextField id="txtAddress" fx:id="txtAddress" layoutX="104.0" layoutY="111.0" visible="false" />
+      <Text id="lblDeliveryPrice" fx:id="lblDeliveryPrice" layoutX="351.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Price:" visible="false" />
+      <Text id="lblDeliveryPriceAmount" fx:id="lblDeliveryPriceAmount" layoutX="451.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20" visible="false" />
+      <Text layoutX="351.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price:" />
+      <Text id="lblTotalPriceAmount" fx:id="lblTotalPriceAmount" layoutX="451.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <Text layoutX="36.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment type:" />
+      <ComboBox id="cmbPaymentType" fx:id="cmbPaymentType" layoutX="123.0" layoutY="374.0" onAction="#choosingPay" prefWidth="150.0" promptText="Select Payment" />
+      <Button id="btnPurchase" fx:id="btnPurchase" layoutX="268.0" layoutY="406.0" mnemonicParsing="false" onAction="#PurchaseListenner" text="Purchase" />
+      <Button id="btnReturn" fx:id="btnReturn" layoutX="38.0" layoutY="406.0" mnemonicParsing="false" onAction="#returnListenner" text="Return to order" />
+      <Text id="lblException1" fx:id="lblException1" fill="RED" layoutX="264.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblException2" fx:id="lblException2" fill="RED" layoutX="263.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblException3" fx:id="lblException3" fill="RED" layoutX="263.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblException0" fx:id="lblException0" fill="RED" layoutX="395.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblDDots" fx:id="lblDDots" layoutX="166.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox id="cmbHours" fx:id="cmbHours" layoutX="104.0" layoutY="188.0" prefHeight="25.0" promptText="HH" />
+      <ComboBox id="cmbMinutes" fx:id="cmbMinutes" layoutX="174.0" layoutY="188.0" prefHeight="25.0" promptText="MM" />
+      <Text id="lblTel" fx:id="lblTel" layoutX="34.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel:" visible="false" />
+      <TextField id="txtTel" fx:id="txtTel" layoutX="104.0" layoutY="224.0" visible="false" />
+      <Text id="lblExceptionTel" fx:id="lblExceptionTel" fill="RED" layoutX="259.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblExcepPay" fx:id="lblExcepPay" fill="RED" layoutX="278.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblException4" fx:id="lblErrorDate" fill="RED" layoutX="258.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" visible="false" />
+      <Text id="lblErrorDate" fx:id="lblErrorTime" fill="#f20606" layoutX="255.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimum time is 3 hours!" visible="false" />
+   </children>
+</AnchorPane>

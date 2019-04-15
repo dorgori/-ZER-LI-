@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.ServerRunningGui">
+   <children>
+      <Text layoutX="52.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server Running!">
+         <font>
+            <Font name="AR CHRISTY" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#a6bc44" />
+                  <Stop color="#e1931f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button id="btnDisc" fx:id="btnDisc" layoutX="130.0" layoutY="90.0" mnemonicParsing="false" onAction="#disconnectPressed" text="Disconnect" />
+   </children>
+</AnchorPane>

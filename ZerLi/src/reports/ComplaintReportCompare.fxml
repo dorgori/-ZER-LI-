@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reports.ComplaintReportCompareGui">
+   <children>
+      <BarChart id="complaintChart" fx:id="complaintChart" layoutX="201.0" layoutY="200.0" prefHeight="205.0" prefWidth="291.0">
+        <xAxis>
+          <CategoryAxis prefHeight="11.0" prefWidth="196.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="145.0" prefWidth="28.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Text fill="#0059ff" layoutX="146.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Complaint Report">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="19.0" layoutY="138.0" text="Total Compensation Amount : " />
+      <Text id="txtAmount" fx:id="txtAmount" layoutX="191.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="202.0" layoutY="74.0" text="Quarter : " />
+      <Label layoutX="119.0" layoutY="74.0" text="Year : " />
+      <Text id="txtYear" fx:id="txtYear" layoutX="159.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text id="txtQuarter" fx:id="txtQuarter" layoutX="263.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="21.0" layoutY="74.0" text="Store ID : " />
+      <Text id="txtStoreID" fx:id="txtStoreID" layoutX="78.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="19.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint in quarter : " />
+      <Text id="txtNumComplaint" fx:id="txtNumComplaint" layoutX="191.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="20.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Compensation : " />
+      <Text id="txtNumberCompensate" fx:id="txtNumberCompensate" layoutX="191.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button id="btnCompareOther" fx:id="btnCompareOther" layoutX="32.0" layoutY="348.0" mnemonicParsing="false" onAction="#cmpWithOther" text="Compare with other store" />
+      <Label layoutX="406.0" layoutY="138.0" text="Total Compensation Amount : " />
+      <Text id="txtAmount" fx:id="txtAmount1" layoutX="578.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="589.0" layoutY="74.0" text="Quarter : " />
+      <Label layoutX="506.0" layoutY="74.0" text="Year : " />
+      <Text id="txtYear" fx:id="txtYear1" layoutX="546.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text id="txtQuarter" fx:id="txtQuarter1" layoutX="650.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="408.0" layoutY="74.0" text="Store ID : " />
+      <Text id="txtStoreID" fx:id="txtStoreID1" layoutX="465.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="406.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complaint in quarter : " />
+      <Text id="txtNumComplaint" fx:id="txtNumComplaint1" layoutX="578.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="407.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Compensation : " />
+      <Text id="txtNumberCompensate" fx:id="txtNumberCompensate1" layoutX="578.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Button id="btnReturn" fx:id="btnReturn" layoutX="33.0" layoutY="303.0" mnemonicParsing="false" onAction="#btnReturnPressed" text="Return to view report" />
+   </children>
+</AnchorPane>

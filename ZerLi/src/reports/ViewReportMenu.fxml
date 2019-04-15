@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reports.ViewReportMenuGui">
+   <children>
+      <Text id="reportTitle_txt" fx:id="reportTitle_txt" layoutX="28.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Reports Menu">
+         <font>
+            <Font size="28.0" />
+         </font></Text>
+      <Button id="ViewReport_BTN" fx:id="ViewReport_BTN" layoutX="135.0" layoutY="231.0" mnemonicParsing="false" onAction="#ViewReportPressed" text="View" />
+      <TextField id="year_txt" fx:id="year_txt" layoutX="27.0" layoutY="189.0" promptText="year" />
+      <ComboBox id="Q_combo" fx:id="Q_combo" layoutX="27.0" layoutY="155.0" prefWidth="150.0" promptText="Quarter" />
+      <Text id="year_prompt_txt" fx:id="year_prompt_txt" fill="RED" layoutX="187.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="enter valid year" visible="false" />
+      <Text fx:id="prompt_combo_txt" fill="RED" layoutX="56.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill All Values" visible="false" />
+      <ComboBox id="type_combo" fx:id="type_combo" layoutX="27.0" layoutY="122.0" prefWidth="150.0" promptText="Report Type" />
+      <ComboBox id="store_combo" fx:id="store_combo" layoutX="27.0" layoutY="88.0" prefWidth="150.0" promptText="Store" visible="false" />
+      <Button id="btnReturnStoreMng" fx:id="btnReturnStoreMng" layoutX="125.0" layoutY="266.0" mnemonicParsing="false" onAction="#returnToStoreMng" text="Return to Store Mng menu" />
+      <Button id="btnLogout" fx:id="btnLogout" layoutX="1.0" layoutY="278.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Text fx:id="wrongDateTxt" fill="RED" layoutX="193.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Data For Requested Quarter" visible="false" wrappingWidth="69.32812053151429" />   
+   </children>
+</AnchorPane>
